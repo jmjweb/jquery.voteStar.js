@@ -53,10 +53,10 @@ options: boolean (true / false)
 default: true
 options: boolean (true / false)
 ```
-***callback: 点亮后，执行什么操作 带参数当前点击对象和分数***
+***callback: 点亮后，执行什么操作? 带参数当前点击对象和分数***
 ```javascript
 default: null
-options: function(starObj, starNum)
+options: function(starObj, starNum){}
 ```
 
 
