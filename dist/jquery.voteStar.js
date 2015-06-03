@@ -34,12 +34,6 @@
 
         var o = $.extend(defaults, options || {});    
 
-        // 开启动画效果
-        if(o.star_animate){
-            $.each(star, function(index, ele) {
-                $(ele).addClass('star_animate');
-            });
-        }
 
         // 开启滑动效果
         if(o.moveStar){
@@ -49,17 +43,22 @@
             star.on('mouseleave', function(event) {
               var that = $(this);
                   rateValObj = that.siblings('input[type=text]'),
-                  // starNum = that.data('starnum') ? that.data('starnum') : 5,
                   aStar_width = that.width() / o.starLength;
-              if(!parseInt(rateValObj.val())){
+              if(!that.data('isSave')){
                 that.find('i').width(0);
               }else{
-                that.find('i').width(rateValObj.val() * aStar_width);
+                that.find('i').width(that.data('isSave') * aStar_width);
               }
             });
         }
 
         star.on('click', function(event) {
+          // 开启动画效果
+          if(o.star_animate){
+              $.each(star, function(index, ele) {
+                  $(ele).addClass('star_animate');
+              });
+          }
           setStarWidth(event, $(this), true);
         });
 
@@ -70,6 +69,7 @@
 
             starObj.find('i').width(aStar_width * starNum);   
             if(saveStar){
+              starObj.data('isSave', starNum);
               if(o.callback && typeof o.callback === 'function'){
                   o.callback(starObj, starNum);
               }

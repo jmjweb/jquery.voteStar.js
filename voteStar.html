@@ -3,21 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+	body{padding: 50px;font-family: Arial;font-style: italic;}
+	</style>
 </head>
 <body>
-	<div>
-		<span class="event_star star_big" data-starnum="3"><i></i></span>
-	</div>
-	<div>
-		<span class="event_star star_big" data-starnum="0"><i></i></span>
-	</div>
-	<div>
-		<span class="event_star star_in" data-starnum="0"><i></i></span>
-	</div>
-	<div>
-		<span class="event_star star_small" data-starnum="0"><i></i></span>
-	</div>
+	<p>click:</p>
+	<span class="event_star star_big" data-starnum="0"><i></i></span><br>	
+	<span class="event_star star_in" data-starnum="0"><i></i></span><br>		
+	<span class="event_star star_small" data-starnum="0"><i></i></span><br>	<br>	<br>	
 
+	<p>default:</p>
+	<span class="event_star star_big" data-starnum="3"><i></i></span><br>
+	<span class="event_star star_in" data-starnum="3.5"><i></i></span><br>
+	<span class="event_star star_small" data-starnum="2"><i></i></span><br>		
+	
+	
 	<link rel="stylesheet" href="dist/voteStar.css">
 	<script src="lib/jquery-1.9.1.min.js"></script>
 	<script src="dist/jquery.voteStar.js"></script>
@@ -25,7 +26,7 @@
 	$(function(){
 		$('.event_star').voteStar({
 			callback: function(starObj, starNum){
-				alert(starNum)
+				alert('你点击了页面中第'+(starObj.index('span')+1)+'个星星，分数是'+starNum)
 			}
 		})		
 	})
