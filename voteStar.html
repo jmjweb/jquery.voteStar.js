@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<span class="event_star star_big" data-starnum="3"><i></i></span>
+	</div>
+	<div>
+		<span class="event_star star_big" data-starnum="0"><i></i></span>
+	</div>
+	<div>
+		<span class="event_star star_in" data-starnum="0"><i></i></span>
+	</div>
+	<div>
+		<span class="event_star star_small" data-starnum="0"><i></i></span>
+	</div>
+
+	<link rel="stylesheet" href="dist/voteStar.css">
+	<script src="../jquery-1.9.1.min.js"></script>
+	<script src="dist/jquery.voteStar.js"></script>
+	<script>
+	$(function(){
+		$('.event_star').voteStar({
+			callback: function(starObj, starNum){
+				alert(starNum)
+			}
+		})		
+	})
+	</script>
+</body>
+</html>

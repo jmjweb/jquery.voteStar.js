@@ -1,0 +1,56 @@
+.event_star{cursor: pointer;}
+.star_animate i{ transition: width .3s;}
+
+/*评级大星星*/
+@starbigwidth: 29px;
+.star_big,.star_big i{display:inline-block;height:@starbigwidth;background-image: url('start.png'); background-repeat: no-repeat; font-size: 0;}
+.star_big{background-position:0 -62px;width:@starbigwidth*5;
+	i{background-position:0 -91px;overflow:hidden;}
+	&[data-starnum="0"] i{width:0;} 
+	&[data-starnum="0.5"] i{width:@starbigwidth * 0.5;}
+	&[data-starnum="1"] i{width:@starbigwidth * 1;}
+	&[data-starnum="1.5"] i{width:@starbigwidth * 1.5;}
+	&[data-starnum="2"] i{width:@starbigwidth * 2;}
+	&[data-starnum="2.5"] i{width:@starbigwidth * 2.5;}
+	&[data-starnum="3"] i{width:@starbigwidth * 3;}
+	&[data-starnum="3.5"] i{width:@starbigwidth * 3.5;}
+	&[data-starnum="4"] i{width:@starbigwidth * 4;}
+	&[data-starnum="4.5"] i{width:@starbigwidth * 4.5;}
+	&[data-starnum="5"] i{width:@starbigwidth * 5;}
+}
+
+/*评级中星星*/
+@starwidthin: 17px;
+.star_in,.star_in i{display:inline-block;height:@starwidthin;background-image: url('start.png'); background-repeat: no-repeat; font-size: 0;}
+.star_in{background-position:0 0;width:@starwidthin*5;
+	i{background-position:0 -17px;overflow:hidden;}
+	&[data-starnum="0"] i{width:0;} 
+	&[data-starnum="0.5"] i{width:@starwidthin * 0.5;}
+	&[data-starnum="1"] i{width:@starwidthin * 1;}
+	&[data-starnum="1.5"] i{width:@starwidthin * 1.5;}
+	&[data-starnum="2"] i{width:@starwidthin * 2;}
+	&[data-starnum="2.5"] i{width:@starwidthin * 2.5;}
+	&[data-starnum="3"] i{width:@starwidthin * 3;}
+	&[data-starnum="3.5"] i{width:@starwidthin * 3.5;}
+	&[data-starnum="4"] i{width:@starwidthin * 4;}
+	&[data-starnum="4.5"] i{width:@starwidthin * 4.5;}
+	&[data-starnum="5"] i{width:@starwidthin * 5;}
+}
+
+/*评级小星星*/
+@starsmallwidth: 14px;
+.star_small,.star_small i{display:inline-block;height:@starsmallwidth;background-image: url('start.png'); background-repeat: no-repeat; font-size: 0;}
+.star_small{background-position:0 -34px;width:@starsmallwidth*5;
+	i{background-position:0 -48px;overflow:hidden;}
+	&[data-starnum="0"] i{width:0;} 
+	&[data-starnum="0.5"] i{width:@starsmallwidth * 0.5;}
+	&[data-starnum="1"] i{width:@starsmallwidth * 1;}
+	&[data-starnum="1.5"] i{width:@starsmallwidth * 1.5;}
+	&[data-starnum="2"] i{width:@starsmallwidth * 2;}
+	&[data-starnum="2.5"] i{width:@starsmallwidth * 2.5;}
+	&[data-starnum="3"] i{width:@starsmallwidth * 3;}
+	&[data-starnum="3.5"] i{width:@starsmallwidth * 3.5;}
+	&[data-starnum="4"] i{width:@starsmallwidth * 4;}
+	&[data-starnum="4.5"] i{width:@starsmallwidth * 4.5;}
+	&[data-starnum="5"] i{width:@starsmallwidth * 5;}
+}
