@@ -29,7 +29,7 @@
             starLength: 5,                              // 星星数量
             precise: false,                             // 精确显示星星
             star_animate: true,                         // 点亮时缓慢动画
-            callback: function(starObj, starNum){}      // 点亮后，执行什么操作 带参数当前点击对象和分数
+            callback: null                              // 点亮后，执行什么操作 带参数当前点击对象和分数
         }
 
         var o = $.extend(defaults, options || {});    
