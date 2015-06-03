@@ -1,5 +1,5 @@
 # jquery.voteStar.js
-### 一个评分插件
+### 一个简单的评分插件
 
 #####[Example](http://jmjweb.github.io/jquery.voteStar.js/voteStar.html)
 
