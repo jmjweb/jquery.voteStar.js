@@ -28,7 +28,7 @@
             moveStar: false,                            // 鼠标move时点亮星星
             starLength: 5,                              // 星星数量
             precise: false,                             // 精确显示星星
-            star_animate: true,                         // 点亮时缓慢动画
+            starAnimate: true,                         // 点亮时缓慢动画
             callback: null                              // 点亮后，执行什么操作 带参数当前点击对象和分数
         }
 
@@ -54,7 +54,7 @@
 
         star.on('click', function(event) {
           // 开启动画效果
-          if(o.star_animate){
+          if(o.starAnimate){
               $.each(star, function(index, ele) {
                   $(ele).addClass('star_animate');
               });
