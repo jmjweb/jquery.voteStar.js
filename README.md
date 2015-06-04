@@ -15,7 +15,8 @@
 ```html
 <span class="event_star star_in" data-starnum="3.5"><i></i></span>
 ```
-***class有3个可选值star_in/star_big/star_small***
+> class有3个可选值star_in/star_big/star_small  
+> data-starnum可设置默认的分数
 
 ###### step3:
 ```html
