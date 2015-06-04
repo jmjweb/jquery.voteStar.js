@@ -28,11 +28,7 @@
 ###### step4: 
 ```javascript
 $(function(){
-	$('.event_star').voteStar({
-		callback: function(starObj, starNum){
-			alert(starNum)
-		}
-	})		
+	$('.event_star').voteStar({'选项名称': 选项值})		
 })
 ```
 
