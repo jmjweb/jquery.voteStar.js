@@ -13,12 +13,18 @@
 
 ###### step2:
 ```html
+<span class="event_star star_in" data-starnum="3.5"><i></i></span>
+```
+***class有3个可选值star_in/star_big/star_small***
+
+###### step3:
+```html
 <script src="path/to/jquery-1.9.1.min.js"></script>
 <script src="path/to/jquery.voteStar.js"></script>
 ```
 
 
-###### step3: 
+###### step4: 
 ```javascript
 $(function(){
 	$('.event_star').voteStar({
@@ -48,7 +54,7 @@ default: false
 options: boolean (true / false)
 ```
 
-***star_animate: 点亮时缓慢动画***
+***starAnimate: 点亮时缓慢动画***
 ```javascript
 default: true
 options: boolean (true / false)
