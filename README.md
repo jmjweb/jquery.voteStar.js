@@ -1,7 +1,7 @@
 # jquery.voteStar.js
 ### 一个简单的评分插件
 
-####[Example](http://wuuashen.github.io/jquery.voteStar.js/voteStar.html)
+#### [Example](http://wuuashen.github.io/jquery.voteStar.js/voteStar.html)
 
 
 ### 安装：
